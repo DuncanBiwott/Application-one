@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+</head>
+<body>
+    <p>
+        <img  id="image" src="imagesource/bestimg.jpg" alt="" width="400px" height="300px">
+    </p>
+    <h1 id="hey"> test image display</h1>
+    <p>Hello world</p>
+    <p>paragraph page</p>
+    <p>page paragraph</p>
+    <p id="demo"></p>
+    <p id="button">The form elements return by the button when is clicked</p>
+    <form id="div">
+        <h1 id="h1">Login</h1>
+        <label for="firstname">First name.</label><br>
+        <input type="text" name="fname" value="Enter first name"><br>
+        <label for="secondname">Second name.</label><br>
+        <input type="text" name="sname" value="Enter second name"><br>
+        <label for="idnumber">Identity number.</label><br>
+        <input type="number" name="idno" value="Enter identification number"><br>
+        <label for="phonenumber">Phone number.</label><br>
+        <input type="number" name="phonenumber" value="Enter phone number"> <br>
+        <label for="emailaddress">Email Address.</label><br>
+        <input type="email" name="emailaddress" value="enter email address"><br>
+        <label for="placeofresidence">Place of Residence.</label><br>
+        <input type="text" name="placeofresidence" value="place of residence"><br>
+        <label for="password">Password.</label>
+        <input type="password" name="password">
+        <hr>
+        <div>
+        <section class="section1">
+        <p>Gender:</p>
+        <input type="radio" name="sex" value="male"> Male
+        <input type="radio" name="sex" value="female"> Female
+    </section>
+</div>
+       <hr>
+       <section class="section">
+       <input type="checkbox" name="age" value="age">Are you above 18. <br>
+  <input type="checkbox" name="status" value="services">Are you enjoying our services.<br>
+</section>
+    <input id="submit" type="submit" value="Submit">
+    </form>
+ <script>
+     document.write(Date());
+  function myfunction(){
+  var y=document.forms["div"]
+  var start="";
+  var i;
+  for(i=0;i<y.length;i++){
+      start +=y.elements[0].value +"<br>";
+  }
+  document.getElementById("button").innerHTML=start;
+}
+document.getElementById("hey").innerHTML= "The number of images on the body of my document:"+document.images.length;
+document.getElementById("image").src="imagesource/hp840.jpg";
+</script>   
+<button onclick="myfunction()">Click here</button>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+</head>
+<body>
+    <select name="myselection" onchange="actionshow(this.value)">
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="gray">Gray</option>
+    </select>
+    <h1>My Calculator</h1>
+    <form name="myform">
+        <h2>CALCULATOR</h2>
+        Number 1: <input type="text" name="num1"><br>
+        Number 2: <input type="text" name="num2"><br>
+        Result  : <input type="text" name="result"><br>
+        <button onclick="calculator(this)" value="Add" name="add">Add</button>
+        <button onclick="calculator(this)" value="Subtract" name="subtract">Subtract</button>
+        <button onclick="calculator(this)" value="Multiply" name="multiply">Maltiply</button>
+        <button onclick="calculator(this)" value="Devide" name="devide">Divide</button>
+
+    </form>
+<script src="onchange.js"></script>
+</body>
+</html>
